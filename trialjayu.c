@@ -1,0 +1,16 @@
+#include<stdio.h>
+void decrypt(char *c){
+    char *ptr = c;
+    while(*ptr!='\0'){
+        *ptr = *ptr - 1; 
+        ptr++;
+    }
+}
+
+int main(){
+//    char c[] = " Plbz!tp!opx!zpv!ibwf!gjobmmz!efdpefe!uijt-!zpv!dbo!sfbe!uijt///KBZVVVVVVV!j!epou!lopx!ipx!up!qvu!joup!xpset!fwfszuijoh!j!gffm!ps!ibwf!jo!nz!njoe!cvu!gps!nf!-zpv!nblf!uijt!xpsme!uif!nptu!cfbvujgvm!boe!cfuufs!qmbdf!up!mjwf!jo/!Xjui!zpv!fwfsz!jotubodf!gffmt!mjlf!b!dipdpmbuf////j!xjmm!ofwfs!cf!bcmf!up!gffm!uif!tbnf!xbz!gps!bozpof!bt!j!gffm!gps!zpv/!Zpv!bsf!uif!pof!j!dbo!bmxbzt!dpvou!po!boe!j!lopx!zpv!xjmm!cf!GPSFWFS!xjui!nf/j!mpwf!zpv!up!uif!qmvup!boe!cbdl!boe!bmxbzt!xjmm=4/!jut!cffo!bmnptu!24!npouit!up!pvs!gsjfoetijq!boe!xf!ibwf!gpvhiu!b!mpuuu!jo!uiftf!24!npouit!cvu!nptu!pg!uif!ujnf!xifofwfs!xf!bjou!ubmljoh!j!pqfo!nz!mbqupq!boe!tubsf!bu!zpv!///boe!cppn!bmm!nz!bohfs!wbojtift!cvu!uifo!bhbjo!uv!ss!dibmv!ls!efub!ibj!nd/j!gffm!hmbe!uibu!zpv!bsf!xjui!nf/Op!nbuufs!ipx!nvdi!tusfttfe!jn!-ubmljoh!up!zpv!ps!fwfo!zpvs!uipvhiu!sfmjfgt!b!mpu!cvc!)dszjoh!fnpkj*-j!benju!lj!nbj!uvkif!mfls!qpttfttjwf!iv!boe!j!usz!up!pwfsdpnf!uijt!cvu!j!kvtu!dbou!cvu!epou!xpssz!j(mm!usz/!Zpv!kvtu!eftfswf!uif!cftu!jo!zpvs!mjgf/!J!ibwf!dsjfe!tp!nboz!ujnft!bu!uif!uipvhiu!pg!mptjoh!zpv///j!kvtu!dbou!bggpse!up!mptf!zpv/!zpv!nfbo!tppppppppppppppppp!nvdiiiiiiiiiiiii!up!nffff!/!J!ofwfs!xboufe!up!hfu!buubdife!up!bozpof!cvu!xjui!zpv!j!gffm!tp!tp!mpwfe!mjlf!cfujgpe!j!kvtu!qzbbs!v!cpipu!tbbsb/!XF!ibwf!gbdfe!b!mpu!pg!tjuvbujpot!cvu!xf!ofwfs!hbwf!vq!po!fbdi!puifs!boe!ofwfs!xjmm!"/!ibolt!b!mpu!gps!ofwfs!kvehjoh!nf!-gps!upmfsbujoh!nf/!j!xbou!up!wd!v!boe!nboz!uijoht!cvu!mfu!ju!cf!xf!xjmm!nbobhftfoejoh!mputt!pg!mpwf!-qvddijft-ibxbt!boe!ivhttt!=4-!!j!mpc!zpv!ivi!cvccccccccc!=4";
+    char c[]= " Plbz!tp!opx!zpv!ibwf!gjobmmz!efdpefe!uijt-!zpv!dbo!sfbe!uijt///KBZVVVVVVV!j!epou!lopx!ipx!up!qvu!joup!xpset!fwfszuijoh!j!gffm!ps!ibwf!jo!nz!njoe!cvu!gps!nf!-zpv!nblf!uijt!xpsme!uif!nptu!cfbvujgvm!boe!cfuufs!qmbdf!up!mjwf!jo/!Xjui!zpv!fwfsz!jotubodf!gffmt!mjlf!b!dipdpmbuf////j!xjmm!ofwfs!cf!bcmf!up!gffm!uif!tbnf!xbz!gps!bozpof!bt!j!gffm!gps!zpv/!Zpv!bsf!uif!pof!j!dbo!bmxbzt!dpvou!po!boe!j!lopx!zpv!xjmm!cf!GPSFWFS!xjui!nf/j!mpwf!zpv!up!uif!qmvup!boe!cbdl!boe!bmxbzt!xjmm=4/!jut!cffo!bmnptu!24!npouit!up!pvs!gsjfoetijq!boe!xf!ibwf!gpvhiu!b!mpuuu!jo!uiftf!24!npouit!cvu!nptu!pg!uif!ujnf!xifofwfs!xf!bjou!ubmljoh!j!pqfo!nz!mbqupq!boe!tubsf!bu!zpv!///boe!cppn!bmm!nz!bohfs!wbojtift!cvu!uifo!bhbjo!uv!ss!dibmv!ls!efub!ibj!nd/j!gffm!hmbe!uibu!zpv!bsf!xjui!nf/Op!nbuufs!ipx!nvdi!tusfttfe!jn!-ubmljoh!up!zpv!ps!fwfo!zpvs!uipvhiu!sfmjfgt!b!mpu!cvc!)dszjoh!fnpkj*-j!benju!lj!nbj!uvkif!mfls!qpttfttjwf!iv!boe!j!usz!up!pwfsdpnf!uijt!cvu!j!kvtu!dbou!cvu!epou!xpssz!j(mm!usz/!Zpv!kvtu!eftfswf!uif!cftu!jo!zpvs!mjgf/!J!ibwf!dsjfe!tp!nboz!ujnft!bu!uif!uipvhiu!pg!mptjoh!zpv///j!kvtu!dbou!bggpse!up!mptf!zpv/!zpv!nfbo!tppppppppppppppppp!nvdiiiiiiiiiiiii!up!nffff!/!J!ofwfs!xboufe!up!hfu!buubdife!up!bozpof!cvu!xjui!zpv!j!gffm!tp!tp!mpwfe!mjlf!cfujgpe!j!kvtu!qzbbs!v!cpipu!tbbsb/!XF!ibwf!gbdfe!b!mpu!pg!tjuvbujpot!cvu!xf!ofwfs!hbwf!vq!po!fbdi!puifs!boe!ofwfs!xjmm!"/!Uibolt!b!mpu!gps!ofwfs!kvehjoh!nf!-gps!upmfsbujoh!nf/!j!xbou!up!wd!v!boe!nboz!uijoht!cvu!mfu!ju!cf!//xf!xjmm!nbobhf//tfoejoh!mputt!pg!mpwf!-qvddijft-ibxbt!boe!ivhttt!=4-!!j!mpc!zpv!ivi!cvccccccccc!=4";
+	decrypt(c);
+    printf("Decrypted string is: %s", c);
+    return 0;
+}
